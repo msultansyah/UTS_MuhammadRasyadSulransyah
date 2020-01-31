@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="No. Pendaftaran"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="15"
+        android:inputType="phone"
+        android:layout_marginTop="17dp"
+        android:text=""
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv2"
+        android:layout_marginTop="25dp"
+        android:text="Nama"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/et2"
+        android:text=""
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:layout_marginTop="17dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv3"
+        android:layout_marginTop="25dp"
+        android:text="text view"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/rg1"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf" >
+
+        <RadioButton
+            android:id="@+id/rbLaki"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Laki-laki"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Perempuan"
+            android:layout_marginLeft="2dp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RadioGroup>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Agama"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/background_dark"
+            android:singleLine="true"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Alamat"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="15"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="17dp"
+        android:text=""
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv6"
+        android:layout_marginTop="25dp"
+        android:text="Telp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/et6"
+        android:text=""
+        android:ems="15"
+        android:inputType="phone"
+        android:layout_marginTop="17dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="150dp"
+        android:text="Clear"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:ignore="ButtonStyle,HardcodedText" />
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="150dp"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+</LinearLayout>
